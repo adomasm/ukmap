@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e55b22f765e535439c260bceeb881cd9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e55b22f765e535439c260bceeb881cd9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e55b22f765e535439c260bceeb881cd9 = L.map(
+                "map_e55b22f765e535439c260bceeb881cd9",
+                {
+                    center: [51.509865, -0.118092],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a1d1e5f2855981b5f5d66b32278267e1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a1d1e5f2855981b5f5d66b32278267e1.addTo(map_e55b22f765e535439c260bceeb881cd9);
+        
+    
+            var marker_8b03e731a4b99ef2de20100233679875 = L.marker(
+                [51.437442, -0.045073],
+                {}
+            ).addTo(map_e55b22f765e535439c260bceeb881cd9);
+        
+    
+            marker_8b03e731a4b99ef2de20100233679875.bindTooltip(
+                `<div>
+                     Company Name: ANTIC BREWING LIMITED<br>SIC Code: 7072718.0<br>Financials: Year Accounts, Current Assets nan, Employees nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6bc372bf6cb682d9b6325814dde57a84 = L.marker(
+                [51.474568, -2.602444],
+                {}
+            ).addTo(map_e55b22f765e535439c260bceeb881cd9);
+        
+    
+            marker_6bc372bf6cb682d9b6325814dde57a84.bindTooltip(
+                `<div>
+                     Company Name: ASHLEY DOWN BREWERY LIMITED<br>SIC Code: 7021520.0<br>Financials: Year 2022, Current Assets 7169, Employees 1.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6cc1442484cda5a7dc74f1ff1540512 = L.marker(
+                [50.48248, -3.541943],
+                {}
+            ).addTo(map_e55b22f765e535439c260bceeb881cd9);
+        
+    
+            marker_a6cc1442484cda5a7dc74f1ff1540512.bindTooltip(
+                `<div>
+                     Company Name: BAYS BREWERY LIMITED<br>SIC Code: 5904714.0<br>Financials: Year 2022, Current Assets {'Stocks': 76594, 'Debtors': 109734, 'Cash at bank and in hand': 389149}, Employees 1.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a50ba9ac6ef9ba1be856b41a62844a60 = L.marker(
+                [54.697747, -1.205041],
+                {}
+            ).addTo(map_e55b22f765e535439c260bceeb881cd9);
+        
+    
+            marker_a50ba9ac6ef9ba1be856b41a62844a60.bindTooltip(
+                `<div>
+                     Company Name: CAMERONS BREWERY LIMITED<br>SIC Code: 3571101.0<br>Financials: Year 2019, Current Assets 223000, Employees 42.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_099e8b18865eff4518b94b34d41dfc53 = L.marker(
+                [50.119118, -5.536716],
+                {}
+            ).addTo(map_e55b22f765e535439c260bceeb881cd9);
+        
+    
+            marker_099e8b18865eff4518b94b34d41dfc53.bindTooltip(
+                `<div>
+                     Company Name: CORNISH CROWN LIMITED<br>SIC Code: 6713242.0<br>Financials: Year 2022, Current Assets {'Stocks': 36450, 'Debtors': 47219, 'Cash in hand': 1700}, Employees 45.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3dc4c00520b30eb28e285216c0a738e6 = L.marker(
+                [52.289519, 0.127403],
+                {}
+            ).addTo(map_e55b22f765e535439c260bceeb881cd9);
+        
+    
+            marker_3dc4c00520b30eb28e285216c0a738e6.bindTooltip(
+                `<div>
+                     Company Name: FELLOWS BREWERY LIMITED<br>SIC Code: 6961795.0<br>Financials: Year 2012, Current Assets 1, Employees 1.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
