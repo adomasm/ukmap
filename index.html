@@ -1,0 +1,2733 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_67ea97416bbc7548b7438468429fad24 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_67ea97416bbc7548b7438468429fad24" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_67ea97416bbc7548b7438468429fad24 = L.map(
+                "map_67ea97416bbc7548b7438468429fad24",
+                {
+                    center: [51.509865, -0.118092],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_652a690c87909eaf583d42d42fa9d845 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_652a690c87909eaf583d42d42fa9d845.addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            var marker_db292a0de679fd2d8ac5272b3dd37017 = L.marker(
+                [53.700987, -2.46622],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_db292a0de679fd2d8ac5272b3dd37017.bindTooltip(
+                `<div>
+                     Company Name: 12 STEPS BREWERY LTD<br>Address: Unit 4 Dalton Court, Commercial Road, England, Darwen, BB3 0DG
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_333e7a2e05678524130d62650f40295b = L.marker(
+                [51.506868, -0.145874],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_333e7a2e05678524130d62650f40295b.bindTooltip(
+                `<div>
+                     Company Name: 1936 LIMITED<br>Address: Office 166 8 Shepherd Market, , England, London, W1J 7JY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c1c3d598bacb25169feb2e8afc3ab01 = L.marker(
+                [53.413661, -2.165803],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_9c1c3d598bacb25169feb2e8afc3ab01.bindTooltip(
+                `<div>
+                     Company Name: 22 ARCHES BREWING LIMITED<br>Address: 33 Torkington Street, , England, Stockport, SK3 9JS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1c15677de60178e3702de0a205a8c22 = L.marker(
+                [52.09052, -1.94831],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_f1c15677de60178e3702de0a205a8c22.bindTooltip(
+                `<div>
+                     Company Name: 3 WORDS BREWING LTD<br>Address: Cornmill Yard, Cornmill Road, England, Evesham, WR11 2LL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7fe7e80faa03e976eb542e3524d846f = L.marker(
+                [53.476822, -2.161754],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_d7fe7e80faa03e976eb542e3524d846f.bindTooltip(
+                `<div>
+                     Company Name: 3'S A CROWD BREWING LTD<br>Address: Capital House 272 Manchester Road, Droylsden, United Kingdom, Manchester, M43 6PW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9559ebf4c329db9f52aeb50df4fcbdfa = L.marker(
+                [55.0341, -3.340622],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_9559ebf4c329db9f52aeb50df4fcbdfa.bindTooltip(
+                `<div>
+                     Company Name: 4RTY LTD<br>Address: Cushathill Farm, Eaglesfield, United Kingdom, Lockerbie, DG11 3JT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26f601ef663f91012a9bd7a0a71bb711 = L.marker(
+                [53.011707, -1.151976],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_26f601ef663f91012a9bd7a0a71bb711.bindTooltip(
+                `<div>
+                     Company Name: 52 DEGREES BREWING LIMITED<br>Address: Unit F2 Langley Bridge Industrial Estate, Linkmel Road, United Kingdom, Eastwood, NG16 3RZ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4103e4378582bb4f8d80c526e42c31e7 = L.marker(
+                [53.837269, -1.776946],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_4103e4378582bb4f8d80c526e42c31e7.bindTooltip(
+                `<div>
+                     Company Name: 5TH GENERATION BREWING COMPANY LIMITED<br>Address: 1 Park View Court, St Pauls Road, United Kingdom, Shipley, BD18 3DZ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6745d3cddacfa4bef976f918f2a8e5e0 = L.marker(
+                [56.836547, -2.47569],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_6745d3cddacfa4bef976f918f2a8e5e0.bindTooltip(
+                `<div>
+                     Company Name: 6DN LTD.<br>Address: Six Degrees North, Aberdeen Road, Scotland, Laurencekirk, AB30 1AG
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c6d20996db78b02c8057535150609a8c = L.marker(
+                [52.964534, -0.360038],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_c6d20996db78b02c8057535150609a8c.bindTooltip(
+                `<div>
+                     Company Name: 8 SAIL BREWERY LTD<br>Address: Heckington Windmill, Hale Road, United Kingdom, Heckington, NG34 9JW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d100806449e302baa9b87b651c55c5f = L.marker(
+                [50.729323, -1.947597],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_7d100806449e302baa9b87b651c55c5f.bindTooltip(
+                `<div>
+                     Company Name: A BARKERS FERMENTING LTD<br>Address: 4 Fernside Avenue, , United Kingdom, Poole, BH14 0PN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccc3740dca189319e62f331cf26fa4eb = L.marker(
+                [51.57146, -2.97274],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_ccc3740dca189319e62f331cf26fa4eb.bindTooltip(
+                `<div>
+                     Company Name: A-O BREWING COMPANY LIMITED<br>Address: 3 Traston Lane, , United Kingdom, Newport, NP19 4RR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b64df8b8a895cba4db92bbc373661b1 = L.marker(
+                [51.515657, -0.108691],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_0b64df8b8a895cba4db92bbc373661b1.bindTooltip(
+                `<div>
+                     Company Name: AB INBEV UK INVESTMENT COMPANY LIMITED<br>Address: Bureau, 90 Fetter Lane, United Kingdom, London, EC4A 1EN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d66c3b100e26949149ed41416d299f41 = L.marker(
+                [51.515581, -0.108827],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_d66c3b100e26949149ed41416d299f41.bindTooltip(
+                `<div>
+                     Company Name: AB INBEV UK LIMITED<br>Address: Bureau, 90 Fetter Lane, England, London, EC4A 1EN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8d5051ad77bc5c70efa6e530619dbb65 = L.marker(
+                [51.231294, -2.312052],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_8d5051ad77bc5c70efa6e530619dbb65.bindTooltip(
+                `<div>
+                     Company Name: ABBEY ALES LIMITED<br>Address: Unit D2 Commerce Park, Southgate, England, Frome, BA11 2RY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b482ca926920a33a98e33965f831e54d = L.marker(
+                [51.384175, -0.51457],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_b482ca926920a33a98e33965f831e54d.bindTooltip(
+                `<div>
+                     Company Name: ABBEY FORD BREWERY LTD<br>Address: 6 Ford Road, , , Chertsey, KT16 8HD
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93995b9f187b4807ff99a6b64d07db9a = L.marker(
+                [51.725789, 0.417463],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_93995b9f187b4807ff99a6b64d07db9a.bindTooltip(
+                `<div>
+                     Company Name: ABBEY SQUARE LIMITED<br>Address: The Old Grange Warren Estate, Lordship Road Writtle, , Chelmsford, CM1 3WT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab157d1d43bfd4f2895c74b5be9a68f2 = L.marker(
+                [53.358229, -1.481356],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_ab157d1d43bfd4f2895c74b5be9a68f2.bindTooltip(
+                `<div>
+                     Company Name: ABBEYDALE BREWERY LIMITED<br>Address: Unit 8 Aizlewood Road, Sheffield, , South Yorkshire, S8 0YX
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_478bb1f43b282f0593a4b2db9657e298 = L.marker(
+                [56.469836, -3.171109],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_478bb1f43b282f0593a4b2db9657e298.bindTooltip(
+                `<div>
+                     Company Name: ABERNYTE BREWERY LIMITED<br>Address: South Latch Farm, Abernyte, , Perth, PH14 9SU
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2135800d4ae788463e7719e95b970719 = L.marker(
+                [53.36884, -2.56462],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_2135800d4ae788463e7719e95b970719.bindTooltip(
+                `<div>
+                     Company Name: ABERSOCH BREWING COMPANY LTD<br>Address: 28 Barshaw Gardens, Appleton, England, Warrington, WA4 5FA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ff0f51d711015ff137a65233f2acf6e = L.marker(
+                [51.514338, -0.108112],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_9ff0f51d711015ff137a65233f2acf6e.bindTooltip(
+                `<div>
+                     Company Name: ABI SAB GROUP HOLDING LIMITED<br>Address: Bureau, 90 Fetter Lane, United Kingdom, London, EC4A 1EN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a4bf879b9b3056c89bc9b5b042c7010 = L.marker(
+                [52.325385, 1.679207],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_3a4bf879b9b3056c89bc9b5b042c7010.bindTooltip(
+                `<div>
+                     Company Name: ADNAMS PLC<br>Address: East Green,, Southwold,, , Suffolk, IP18 6JW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_498ad7ab2da070e0a39ab9a40c401ad0 = L.marker(
+                [53.298666, -2.100462],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_498ad7ab2da070e0a39ab9a40c401ad0.bindTooltip(
+                `<div>
+                     Company Name: ADSHEAD'S ALES LTD<br>Address: Hollin Old Hall East Grimshaw Lane, Bollington, England, Macclesfield, SK10 5LY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19938d07edbbfe6f3bfc8047dbc47412 = L.marker(
+                [51.473655, -0.117309],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_19938d07edbbfe6f3bfc8047dbc47412.bindTooltip(
+                `<div>
+                     Company Name: AFFINITY BREWING COMPANY LIMITED<br>Address: The Grosvenor Arms, 17 Sidney Road, England, London, SW9 0TP
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c9ddec6e70f1d288b3502daca1d3281c = L.marker(
+                [51.437284, -0.18351],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_c9ddec6e70f1d288b3502daca1d3281c.bindTooltip(
+                `<div>
+                     Company Name: AGAINST THE GRAIN CIDERY LTD<br>Address: Unit 25 Summerstown, , England, London, SW17 0BQ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a8a9ea3e70e3e37f4a9f7b4d06aaeaa3 = L.marker(
+                [50.287865, -5.01035],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_a8a9ea3e70e3e37f4a9f7b4d06aaeaa3.bindTooltip(
+                `<div>
+                     Company Name: AGNATE LIMITED<br>Address: Tremethick, Grampound, , Truro, TR2 4QY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78effa37a47be1b844390942281089cc = L.marker(
+                [54.130747, -0.23748],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_78effa37a47be1b844390942281089cc.bindTooltip(
+                `<div>
+                     Company Name: AGRICOLA BOTTLING LIMITED<br>Address: Humanby Grange, Wold Newton, , Driffield, YO25 3HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d5d5b4527e6068cabece0f033498135 = L.marker(
+                [53.369465, -2.934908],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_5d5d5b4527e6068cabece0f033498135.bindTooltip(
+                `<div>
+                     Company Name: AIGBURTH BREWERY LTD<br>Address: Side House 3 Fulwood Park, Aigburth, England, Liverpool, L17 5AA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4cabd0c62877efb847a14b2d0c9753f1 = L.marker(
+                [51.541254, -3.545817],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_4cabd0c62877efb847a14b2d0c9753f1.bindTooltip(
+                `<div>
+                     Company Name: AIRBORNE ALES LTD<br>Address: 12 Clos Brynach, Brynmenyn, Wales, Bridgend, CF32 9QD
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c40720b18ea34243a033eb355d672b1 = L.marker(
+                [52.976732, -0.026614],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_8c40720b18ea34243a033eb355d672b1.bindTooltip(
+                `<div>
+                     Company Name: ALCAZAR BREWING COMPANY LIMITED<br>Address: Avocet House Bittern Way, Riverside Ind Estate, , Boston, PE21 7NX
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec484441f51a7fc8208aeba5867891ed = L.marker(
+                [51.515812, -0.108649],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_ec484441f51a7fc8208aeba5867891ed.bindTooltip(
+                `<div>
+                     Company Name: ALE FINANCE SERVICES LIMITED<br>Address: Bureau, 90 Fetter Lane, United Kingdom, London, EC4A 1EN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b55da9799b6934d22a42f535014a4e59 = L.marker(
+                [53.393965, -1.45486],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_b55da9799b6934d22a42f535014a4e59.bindTooltip(
+                `<div>
+                     Company Name: ALECHEMIST LIMITED<br>Address: The Boathouse, Canal Street, England, Sheffield, S4 7ZE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_46a61d65dd44cbe1f795e2b4ce83e7a7 = L.marker(
+                [57.5535, -3.0453],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_46a61d65dd44cbe1f795e2b4ce83e7a7.bindTooltip(
+                `<div>
+                     Company Name: ALECHEMY BREWING LTD<br>Address: Malcolmburn, Mulben, Scotland, Keith, AB55 6YB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c834593dfada108ed3097ad545cc3268 = L.marker(
+                [50.922543, 0.484824],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_c834593dfada108ed3097ad545cc3268.bindTooltip(
+                `<div>
+                     Company Name: ALGARVE ROCK LTD<br>Address: 6 Red Barn Mews, , England, Battle, TN33 0AG
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f605dde5d795069d89fb773745a2bc2 = L.marker(
+                [52.650304, -3.243127],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_2f605dde5d795069d89fb773745a2bc2.bindTooltip(
+                `<div>
+                     Company Name: ALL SAINTS BREWING COMPANY LTD<br>Address: 2 Tudor Court, Castle Caereinion, United Kingdom, Welshpool, SY21 9DY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15e496ec877c60bdbca4fad12bd232c0 = L.marker(
+                [51.0877, 0.2459],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_15e496ec877c60bdbca4fad12bd232c0.bindTooltip(
+                `<div>
+                     Company Name: ALLKIN BREWING COMPANY LTD<br>Address: Rendlye Farm Sand Hill Lane, Eridge Green, England, Tunbridge Wells, TN3 9LP
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_486e3659f4acd3e597d7843c3bdfff74 = L.marker(
+                [51.421491, -0.373064],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_486e3659f4acd3e597d7843c3bdfff74.bindTooltip(
+                `<div>
+                     Company Name: ALLPREPPED.UK LTD<br>Address: 69 Station Road, , England, Hampton, TW12 2BT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_996d4738e702c7536b638a9ffa09d5ca = L.marker(
+                [55.035893, -1.494468],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_996d4738e702c7536b638a9ffa09d5ca.bindTooltip(
+                `<div>
+                     Company Name: ALMASTY BREWING COMPANY LTD<br>Address: Unit 11 Algernon Industrial Estate, New York Road, Shiremoor, , Newcastle Upon Tyne, NE27 0NB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_037c99d346d290221ee3890d4236391e = L.marker(
+                [54.980713, -1.723703],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_037c99d346d290221ee3890d4236391e.bindTooltip(
+                `<div>
+                     Company Name: ALNWICK ALES LIMITED<br>Address: Unit 5 The Preserving Works, Shelley Road Newburn Industrial Estate,, , Newcastle Upon Tyne, NE15 9RT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a118adc1b1a61d63fdb437d04603b481 = L.marker(
+                [54.982863, -1.735982],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_a118adc1b1a61d63fdb437d04603b481.bindTooltip(
+                `<div>
+                     Company Name: ALPHA DELTA BREWING LTD<br>Address: 18 Riversdale Court, , United Kingdom, Newcastle Upon Tyne, NE15 8SG
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18ffc09958cbddc000106a3484f44a24 = L.marker(
+                [53.814037, -1.660337],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_18ffc09958cbddc000106a3484f44a24.bindTooltip(
+                `<div>
+                     Company Name: AMITY BREW CO LIMITED<br>Address: Unit 15-16 Festoon Rooms Sunny Bank Mills, 83-85 Town Street, United Kingdom, Farsley, LS28 5UJ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0040a867be876c1f24e5b5d02ee16238 = L.marker(
+                [52.37311, 1.100685],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_0040a867be876c1f24e5b5d02ee16238.bindTooltip(
+                `<div>
+                     Company Name: AMPERSAND BREW CO LTD<br>Address: 27-31 Sawmills Road, , England, Diss, IP22 4GG
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7162310578987b703e02d6f5c568b6f = L.marker(
+                [52.032774, -0.495431],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_f7162310578987b703e02d6f5c568b6f.bindTooltip(
+                `<div>
+                     Company Name: AMPTHILL & WOBURN BREWERY LIMITED<br>Address: Unit D, The Sidings, Station Road, England, Ampthill, MK45 2QY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1cbd45e73db4ff476fcc801e99640f62 = L.marker(
+                [51.615412, -0.176797],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_1cbd45e73db4ff476fcc801e99640f62.bindTooltip(
+                `<div>
+                     Company Name: ANDWELL BREWING COMPANY LTD<br>Address: Global House, 303 Ballards Lane, United Kingdom, London, N12 8NP
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33dfde8675d21466cb570abd6d11c2dd = L.marker(
+                [52.493904, -2.01109],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_33dfde8675d21466cb570abd6d11c2dd.bindTooltip(
+                `<div>
+                     Company Name: ANDYS' ALES LIMITED<br>Address: First Floor, Black Country House, Rounds Green Road, United Kingdom, Oldbury, B69 2DG
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0664a9c6cc77e0e68585b4a9e8e2d974 = L.marker(
+                [52.472243, -2.079517],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_0664a9c6cc77e0e68585b4a9e8e2d974.bindTooltip(
+                `<div>
+                     Company Name: ANGEL ALES LIMITED<br>Address: Old Bank Buildings, Upper High Street, , Cradley Heath, B64 5HY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c6677acfbe7c77a4706f3a5d97ca479 = L.marker(
+                [51.516862, -0.109568],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_4c6677acfbe7c77a4706f3a5d97ca479.bindTooltip(
+                `<div>
+                     Company Name: ANHEUSER-BUSCH EUROPE LIMITED<br>Address: Bureau, 90 Fetter Lane, United Kingdom, London, EC4A 1EN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25d1457657271f5dccf50cec5ae15f83 = L.marker(
+                [53.160172, -3.12906],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_25d1457657271f5dccf50cec5ae15f83.bindTooltip(
+                `<div>
+                     Company Name: ANKERDBREW LTD<br>Address: 35 Llys Ambrose, , United Kingdom, Mold, CH7 1GU
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4af05919c0071478fe4d4a9e55ef39e = L.marker(
+                [53.955504, -1.079738],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_a4af05919c0071478fe4d4a9e55ef39e.bindTooltip(
+                `<div>
+                     Company Name: ANOTHER BEER LTD<br>Address: The New House The New House, Peckitt Street, England, York, YO1 9SF
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7486a516a502549aa5160c1963d38cd8 = L.marker(
+                [53.79139, -1.58177],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_7486a516a502549aa5160c1963d38cd8.bindTooltip(
+                `<div>
+                     Company Name: ANTHOLOGY BREWING COMPANY LTD<br>Address: Unit 6 Armley Link Trading Estate, Armley Road, England, Leeds, LS12 2QN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_38c7aa526e0ca361510fd55af4440f66 = L.marker(
+                [51.442939, -0.0527],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_38c7aa526e0ca361510fd55af4440f66.bindTooltip(
+                `<div>
+                     Company Name: ANTIC BREWING LIMITED<br>Address: 74 Malham Road, , England, London, SE23 1AG
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ee727b879660518c5f1cf052e6fd145 = L.marker(
+                [50.146209, -5.069456],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_3ee727b879660518c5f1cf052e6fd145.bindTooltip(
+                `<div>
+                     Company Name: ANTIQUE CHRIST LIMITED<br>Address: 11 Dracaena Avenue Dracaena Avenue, , England, Falmouth, TR11 2EG
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5778a55215dc9f618324314ef6107295 = L.marker(
+                [53.699464, -1.681891],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_5778a55215dc9f618324314ef6107295.bindTooltip(
+                `<div>
+                     Company Name: APE ALES LTD<br>Address: 22 Church Park, , England, Liversedge, WF15 7NA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba22d935d227923b710ac73c1c7d08cd = L.marker(
+                [53.482666, -2.26017],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_ba22d935d227923b710ac73c1c7d08cd.bindTooltip(
+                `<div>
+                     Company Name: APPLEBY BREWERY LTD.<br>Address: Alex House, 260-268 Chapel Street, , England, Salford, M3 5JZ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f55a2c87377fa6cefdd5d7edae5b804 = L.marker(
+                [51.44771, -2.56713],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_2f55a2c87377fa6cefdd5d7edae5b804.bindTooltip(
+                `<div>
+                     Company Name: ARBOR ALES LTD<br>Address: 181 Easton Road, , England, Bristol, BS5 0HQ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab5463a17ddba49101c743ac4ccf2d4e = L.marker(
+                [56.627793, -2.513731],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_ab5463a17ddba49101c743ac4ccf2d4e.bindTooltip(
+                `<div>
+                     Company Name: ARBROATH AD 1320 LIMITED<br>Address: Drummygar Mains, Carmyllie, Scotland, Arbroath, DD11 2RA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2c523a51bee891232ac45d10b35d216 = L.marker(
+                [52.215941, 0.140287],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_e2c523a51bee891232ac45d10b35d216.bindTooltip(
+                `<div>
+                     Company Name: ARCHANGEL BREWING LTD.<br>Address: 8 Enniskillen Road, , , Cambridge, CB4 1SQ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28dff38d4d0ae8f867abe708a1b11158 = L.marker(
+                [56.5984, -5.3095],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_28dff38d4d0ae8f867abe708a1b11158.bindTooltip(
+                `<div>
+                     Company Name: ARDGOUR ALES LTD<br>Address: The Old Manse, Ardgour, , Fort William, PH33 7AH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_677b7522350bde2529dfbf82691fd36b = L.marker(
+                [54.552338, -5.56504],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_677b7522350bde2529dfbf82691fd36b.bindTooltip(
+                `<div>
+                     Company Name: ARDS BREWING COMPANY LTD<br>Address: 34b Carrowdore Road, Greyabbey, , Newtownards, BT22 2LX
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_714b6e10826e4923d19f12d90e17fa14 = L.marker(
+                [51.812775, -2.352506],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_714b6e10826e4923d19f12d90e17fa14.bindTooltip(
+                `<div>
+                     Company Name: ARLINGHAM ALES LIMITED<br>Address: The Old Dairy, Church Road, , Arlingham, GL2 7JL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb23f49a5ecd365bd0d4a264b554ca96 = L.marker(
+                [55.543472, -5.090186],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_cb23f49a5ecd365bd0d4a264b554ca96.bindTooltip(
+                `<div>
+                     Company Name: ARRAN BREW LTD.<br>Address: Arran Brewery Guest House, Whiting Bay, Scotland, Isle Of Arran, KA27 8PZ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f9d94f6f3c1608d6d8d28a6f97218440 = L.marker(
+                [52.299402, 0.864716],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_f9d94f6f3c1608d6d8d28a6f97218440.bindTooltip(
+                `<div>
+                     Company Name: ARTEFACT BREWING LTD<br>Address: Stayer Cottage Bury Road, Ixworth, England, Bury St. Edmunds, IP31 2HX
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78f1d2b3db3bf0817432ecd8401f0c92 = L.marker(
+                [51.603742, -4.171018],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_78f1d2b3db3bf0817432ecd8401f0c92.bindTooltip(
+                `<div>
+                     Company Name: ARTHUR'S STONE BREWERY LTD<br>Address: Brynhyfryd, Reynoldston, Wales, Swansea, SA3 1AA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75c574786ba8f7cb432f3c129ceab4b7 = L.marker(
+                [51.529611, -3.216245],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_75c574786ba8f7cb432f3c129ceab4b7.bindTooltip(
+                `<div>
+                     Company Name: ARTIGIANO LIMITED<br>Address: 11052691 - COMPANIES HOUSE DEFAULT ADDRESS, , , Cardiff, CF14 8LH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba46a1f90f308986f3e7a8e6732517c1 = L.marker(
+                [51.526424, -3.243583],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_ba46a1f90f308986f3e7a8e6732517c1.bindTooltip(
+                `<div>
+                     Company Name: ARTISAN BREWING COMPANY LTD<br>Address: 46 Green Meadow Drive, Tongwynlais, Wales, Cardiff, CF15 7LW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ba358028c26ae40a671787a2466ce47 = L.marker(
+                [53.577323, -0.081196],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_0ba358028c26ae40a671787a2466ce47.bindTooltip(
+                `<div>
+                     Company Name: ARTISAN CRAFT BREWERY LTD<br>Address: Unit 3 Pyewipe Place, Estate Road 3, United Kingdom, Grimsby, DN31 2FH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cefa906261a0f0d1447b2e99829d7cb8 = L.marker(
+                [51.335929, -0.776439],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_cefa906261a0f0d1447b2e99829d7cb8.bindTooltip(
+                `<div>
+                     Company Name: ASCOT ALES LIMITED<br>Address: Unit 4 Lawrence Way, , England, Camberley, GU15 3DL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_abf5f5f7861eb01f1aac5e6572d86865 = L.marker(
+                [51.47132, -2.62016],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_abf5f5f7861eb01f1aac5e6572d86865.bindTooltip(
+                `<div>
+                     Company Name: ASHLEY DOWN BREWERY LIMITED<br>Address: 15 Wathen Road, , , Bristol, BS6 5BY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_97f252cc17a25a1da6f1fcca924ce2cc = L.marker(
+                [51.804863, -0.768459],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_97f252cc17a25a1da6f1fcca924ce2cc.bindTooltip(
+                `<div>
+                     Company Name: ASPIRATION BREWERY LIMITED<br>Address: Unit 1 Symmetry Park, Samian Way, United Kingdom, Aston Clinton, HP22 5WJ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c904ae6df6005b6797bc0154b4938ef7 = L.marker(
+                [52.506037, -1.892778],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_c904ae6df6005b6797bc0154b4938ef7.bindTooltip(
+                `<div>
+                     Company Name: ASTON MANOR LIMITED<br>Address: Deykin Avenue, , , Birmingham, B6 7BH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_448e42c4e07d3f74d752aa071c87d28e = L.marker(
+                [52.426733, -1.91428],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_448e42c4e07d3f74d752aa071c87d28e.bindTooltip(
+                `<div>
+                     Company Name: ATTIC BREW CO. LTD<br>Address: 29b Mary Vale Road, Stirchley, England, Birmingham, B30 2DA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db5e9e9564efc5654d12400e79dd7d3e = L.marker(
+                [55.816806, -4.183176],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_db5e9e9564efc5654d12400e79dd7d3e.bindTooltip(
+                `<div>
+                     Company Name: AUCHENKILNS BREWERY LIMITED<br>Address: 3 Balvaird Drive, Rutherglen, Scotland, Glasgow, G73 2PU
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7337abd694134d27fd00ba3845928e52 = L.marker(
+                [50.729026, -3.530522],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_7337abd694134d27fd00ba3845928e52.bindTooltip(
+                `<div>
+                     Company Name: AVOCET ALES LIMITED<br>Address: The Exeter Brewery, Cowley Bridge Road, United Kingdom, Exeter, EX4 5AD
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e587b73132ba4625ff72940276c38893 = L.marker(
+                [51.526252, -3.714333],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_e587b73132ba4625ff72940276c38893.bindTooltip(
+                `<div>
+                     Company Name: AWK BREW CO LTD<br>Address: 65 Pisgah Street, Kenfig Hill, Wales, Bridgend, CF33 6BU
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8914042f95641054c9a17590995de63 = L.marker(
+                [53.405567, -2.987061],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_d8914042f95641054c9a17590995de63.bindTooltip(
+                `<div>
+                     Company Name: AZVEX BREWING COMPANY LTD<br>Address: Unit 16 King Edward Rise, Gibraltar Row, England, Liverpool, L3 7HJ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc5e8f865f90a7c1b4e2852850d11ecd = L.marker(
+                [51.516212, -0.148422],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_dc5e8f865f90a7c1b4e2852850d11ecd.bindTooltip(
+                `<div>
+                     Company Name: B & T BREWERY LIMITED<br>Address: 43 Manchester Street, , England, London, W1U 7LP
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43fdddd0c7f3a0175026376cd30c3e2a = L.marker(
+                [53.287651, -3.223304],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_43fdddd0c7f3a0175026376cd30c3e2a.bindTooltip(
+                `<div>
+                     Company Name: BAD DRAGON LIMITED<br>Address: Bad Dragon Greenfield Business Centre, Greenfield Road, United Kingdom, Greenfield, CH8 7GR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7038b182b8ff91a3fc7675e270f4401a = L.marker(
+                [50.85759, 0.56824],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_7038b182b8ff91a3fc7675e270f4401a.bindTooltip(
+                `<div>
+                     Company Name: BAD-BOY BREWING COMPANY LTD<br>Address: 58 Park Crescent, , England, Hastings, TN34 2PP
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_683bbdbb42bd6cd860f96580e4671bd7 = L.marker(
+                [50.854442, -2.189005],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_683bbdbb42bd6cd860f96580e4671bd7.bindTooltip(
+                `<div>
+                     Company Name: BADGER ALES LIMITED<br>Address: The Brewery, Blandford St. Mary, , Dorset, DT11 9LS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6335fe2a1a1c02cd3c53772c6f26dc6 = L.marker(
+                [52.619491, -0.592403],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_e6335fe2a1a1c02cd3c53772c6f26dc6.bindTooltip(
+                `<div>
+                     Company Name: BAKER'S DOZEN BREWING CO LIMITED<br>Address: Unit 5 Ketton Business Estate, Pit Lane, England, Ketton, PE9 3SZ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1f77e2a454ac2df640735620e58dc62 = L.marker(
+                [53.392316, -3.023599],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_b1f77e2a454ac2df640735620e58dc62.bindTooltip(
+                `<div>
+                     Company Name: BALTIC FLEET BREWERY LIMITED<br>Address: 1 Mortimer Street, , , Birkenhead, CH41 5EU
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5faf95d04b1e80b4d2f9de01dec4cda2 = L.marker(
+                [53.022343, -1.318732],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_5faf95d04b1e80b4d2f9de01dec4cda2.bindTooltip(
+                `<div>
+                     Company Name: BANG THE ELEPHANT BREWING CO LTD<br>Address: Unit 14 Baileybrook Business Park Amber Drive, Langley Mill, England, Nottingham, NG16 4BE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_74f246bea8f963eadb17d653d728d937 = L.marker(
+                [53.589665, -2.407423],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_74f246bea8f963eadb17d653d728d937.bindTooltip(
+                `<div>
+                     Company Name: BANK TOP BREWERY LIMITED<br>Address: The Pavilion, Ashworth Lane Bank Top, , Bolton, BL1 8RA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dfe18656f071e6ef38848e1aa3ae2926 = L.marker(
+                [53.523933, -2.290322],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_dfe18656f071e6ef38848e1aa3ae2926.bindTooltip(
+                `<div>
+                     Company Name: BANNER BREWING LIMITED<br>Address: 7 Bannerman Avenue, Prestwich, England, Manchester, M25 1EA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_360781b20741e55dedea0714f83bcc51 = L.marker(
+                [50.862451, -2.172949],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_360781b20741e55dedea0714f83bcc51.bindTooltip(
+                `<div>
+                     Company Name: BAREFACED BREWING LTD<br>Address: Unit 1 Holland Way, Holland Business Park, United Kingdom, Blandford, DT11 7GH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b123d1074e53a5bd529cc3f90c1679b6 = L.marker(
+                [53.626937, -1.796785],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_b123d1074e53a5bd529cc3f90c1679b6.bindTooltip(
+                `<div>
+                     Company Name: BARKER'S BREWING COMPANY LTD<br>Address: James Barker 26 Church Lane, South Crosland, United Kingdom, Huddersfield, HD4 7DB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cfd1bad894eccee50410d50fc74c74ae = L.marker(
+                [50.4502, -3.7138],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_cfd1bad894eccee50410d50fc74c74ae.bindTooltip(
+                `<div>
+                     Company Name: BARNABY'S BREWHOUSE LTD<br>Address: The Old Stable, Hole Farm, England, Staverton, TQ11 0LA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f27e38537c24489087893a8a7b72c6cb = L.marker(
+                [51.632183, -0.149941],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_f27e38537c24489087893a8a7b72c6cb.bindTooltip(
+                `<div>
+                     Company Name: BARNET BREW CO. LTD<br>Address: C/O E L M, 286a Chase Road, United Kingdom, London, N14 6HF
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a91cabb6f18f333cd6addf44d62a462a = L.marker(
+                [56.109986, -3.927495],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_a91cabb6f18f333cd6addf44d62a462a.bindTooltip(
+                `<div>
+                     Company Name: BARNEY'S BEER LIMITED<br>Address: Springfield House, Laurelhill Business Park, Scotland, Stirling, FK7 9JQ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4cc4f1dbc0d7e6d48dd917d4052de253 = L.marker(
+                [54.690746, -7.342227],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_4cc4f1dbc0d7e6d48dd917d4052de253.bindTooltip(
+                `<div>
+                     Company Name: BARONSCOURT BREWING COMPANY LTD<br>Address: 38 Baronscourt Road, Newtownstewart, Northern Ireland, Omagh, BT78 4EY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa23f71919953c9f6dd284fd14480306 = L.marker(
+                [50.711279, -4.208039],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_aa23f71919953c9f6dd284fd14480306.bindTooltip(
+                `<div>
+                     Company Name: BARTON HOUSE BREWING COMPANY LIMITED<br>Address: Barton House Stowford, Lewdown, , Okehampton, EX20 4BZ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df76241bef0ab4ce7eece47890922afe = L.marker(
+                [51.460889, -2.581187],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_df76241bef0ab4ce7eece47890922afe.bindTooltip(
+                `<div>
+                     Company Name: BASEMENT BEER LTD<br>Address: 32 Upper York Street, , England, Bristol, BS2 8QN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bad9808712374d545b7060240833b19a = L.marker(
+                [51.977385, -3.542471],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_bad9808712374d545b7060240833b19a.bindTooltip(
+                `<div>
+                     Company Name: BASKET AND HOPS LIMITED<br>Address: Close Farm, Llywel, Wales, Brecon, LD3 8RH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3eb2830a2435c42766857416e3abc0bd = L.marker(
+                [51.20794, -2.91306],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_3eb2830a2435c42766857416e3abc0bd.bindTooltip(
+                `<div>
+                     Company Name: BASON BRIDGE BREWING COMPANY LTD<br>Address: Unit 2 Church Road, Bason Bridge, England, Highbridge, TA9 4RG
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39278b866f5cd6725ed6889290778471 = L.marker(
+                [50.989191, -1.546736],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_39278b866f5cd6725ed6889290778471.bindTooltip(
+                `<div>
+                     Company Name: BAT COUNTRY BREW CO LIMITED<br>Address: Unit D Whinwhistle Road, East Wellow, England, Romsey, SO51 6BH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_38462292de57e2df7798fd36c4ea3fd8 = L.marker(
+                [53.800815, -2.216077],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_38462292de57e2df7798fd36c4ea3fd8.bindTooltip(
+                `<div>
+                     Company Name: BATCH BREW LTD<br>Address: Batch Brew Coal Clough Lane, Unit 10 Habgerham Mill, England, Burnley, BB11 5BS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c150dd7986b987251fed8321b75dfbd = L.marker(
+                [52.483477, -2.106131],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_1c150dd7986b987251fed8321b75dfbd.bindTooltip(
+                `<div>
+                     Company Name: BATHAMS (DELPH) LIMITED<br>Address: The Delph, Brierley Hill, , West Midlands, DY5 2TN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b5d00b25d9bfa896a4939f9a9bf0f3d = L.marker(
+                [51.896303, -2.057142],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_2b5d00b25d9bfa896a4939f9a9bf0f3d.bindTooltip(
+                `<div>
+                     Company Name: BATTLEDOWN BREWING COMPANY LIMITED<br>Address: Coxhorne Farm London Road, Charlton Kings, England, Cheltenham, GL52 6UY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc769a0f74693ca56e8de606b79d661f = L.marker(
+                [50.81971, -1.56348],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_fc769a0f74693ca56e8de606b79d661f.bindTooltip(
+                `<div>
+                     Company Name: BAYNHAMS BREWERY LIMITED<br>Address: Hops House, Lymington Road, England, Brockenhurst, SO42 7UF
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ffb6f6638b01649c1e875724028c19f = L.marker(
+                [50.481436, -3.567357],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_8ffb6f6638b01649c1e875724028c19f.bindTooltip(
+                `<div>
+                     Company Name: BAYS BREWERY LIMITED<br>Address: Sigma House Oak View Close, Edginswell Park, , Torquay, TQ2 7FF
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b68960d8977a87dbad0eaacab40a9cf4 = L.marker(
+                [53.913885, -2.154463],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_b68960d8977a87dbad0eaacab40a9cf4.bindTooltip(
+                `<div>
+                     Company Name: BB18 BREWING CO LTD<br>Address: 31/33 Victoria Road, Earby, England, Barnoldswick, BB18 6UN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bbc5eb009433a65973fd4e346656b4dd = L.marker(
+                [51.652341, -3.026659],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_bbc5eb009433a65973fd4e346656b4dd.bindTooltip(
+                `<div>
+                     Company Name: BE:VITO LIMITED<br>Address: Unit 89 Springvale Industrial Estate, , Wales, Cwmbran, NP44 5BH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_009f64a76455d95d2f13375513a09264 = L.marker(
+                [52.513925, -2.089509],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_009f64a76455d95d2f13375513a09264.bindTooltip(
+                `<div>
+                     Company Name: BEACON HOTEL LIMITED<br>Address: Finch House, 28-30 Wolverhampton Street, England, Dudley, DY1 1DB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_867a26646548c80c529e742380db4df1 = L.marker(
+                [50.8422, -0.4021],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_867a26646548c80c529e742380db4df1.bindTooltip(
+                `<div>
+                     Company Name: BEAN AND BARLEY LTD<br>Address: Fairview, Mill Lane, United Kingdom, Worthing, BN13 3DF
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ffed2db999679f08ae715ec608367796 = L.marker(
+                [53.669028, -2.644116],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_ffed2db999679f08ae715ec608367796.bindTooltip(
+                `<div>
+                     Company Name: BEARDED ADVENTURERS BREWING COMPANY LTD<br>Address: 53 Evergreen Close, , England, Chorley, PR7 3QB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0cccf4f9316666cc7e5f1a1e8d502a7 = L.marker(
+                [52.080327, -1.018542],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_e0cccf4f9316666cc7e5f1a1e8d502a7.bindTooltip(
+                `<div>
+                     Company Name: BEARLY ORGANISED LTD<br>Address: 9 Whittlebury Road, Silverstone, United Kingdom, Towcester, NN12 8UN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d94a3bc6392e01fd2d22c5dc10562822 = L.marker(
+                [53.162651, -2.199839],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_d94a3bc6392e01fd2d22c5dc10562822.bindTooltip(
+                `<div>
+                     Company Name: BEARTOWN BREWERY LIMITED<br>Address: Bromley House, Spindle Street, England, Congleton, CW12 1QN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a5c2065b108fb216a9bde795a9d9742 = L.marker(
+                [52.882265, -1.201572],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_4a5c2065b108fb216a9bde795a9d9742.bindTooltip(
+                `<div>
+                     Company Name: BEASTIE BREWING COMPANY LTD<br>Address: 3 Kegworth Road, Gotham, England, Nottingham, NG11 0JS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7cbefd4da71b304bc6f7d960a616fef7 = L.marker(
+                [56.127661, -3.360387],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_7cbefd4da71b304bc6f7d960a616fef7.bindTooltip(
+                `<div>
+                     Company Name: BEATHBREWING LTD<br>Address: The Rectory, Foulford Road, United Kingdom, Cowdenbeath, KY4 9AP
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff1ef0bb2bc9240e38437e24fe32bc4f = L.marker(
+                [51.598671, -0.066813],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_ff1ef0bb2bc9240e38437e24fe32bc4f.bindTooltip(
+                `<div>
+                     Company Name: BEAVERTOWN BREWERY LTD<br>Address: Unit 17 & 18 Lockwood Industrial Estate, Mill Mead Road, , London, N17 9PQ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc526b07fa9a883f1e143b428d45e0b3 = L.marker(
+                [51.79893, -0.214717],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_bc526b07fa9a883f1e143b428d45e0b3.bindTooltip(
+                `<div>
+                     Company Name: BEER AND BOTANICALS LIMITED<br>Address: Unit 2, The Point,, Swallowfields, England, Welwyn Garden City, AL7 1WL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebf875c93c7b8856076703370d27bc76 = L.marker(
+                [51.513176, -1.137507],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_ebf875c93c7b8856076703370d27bc76.bindTooltip(
+                `<div>
+                     Company Name: BEER COUNTER LIMITED<br>Address: 6 Chapel Close, South Stoke, , Reading, RG8 0JW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7eb9d2160bc6ccc3af2dadd0a4e9fb50 = L.marker(
+                [54.062429, -6.004093],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_7eb9d2160bc6ccc3af2dadd0a4e9fb50.bindTooltip(
+                `<div>
+                     Company Name: BEER HUT BREWING COMPANY LTD<br>Address: 6 Riverside Park, , Northern Ireland, Kilkeel, BT34 4NA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f7b5f37e9c7fbd0742c5a14e2dc5bbe = L.marker(
+                [53.551554, -3.056609],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_1f7b5f37e9c7fbd0742c5a14e2dc5bbe.bindTooltip(
+                `<div>
+                     Company Name: BEER STATION BREWERY LTD<br>Address: 3b Victoria Buildings, Victoria Road, United Kingdom, Formby, L37 7DB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4220a68a28cd982ca44760b49052efcb = L.marker(
+                [50.717387, -1.162378],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_4220a68a28cd982ca44760b49052efcb.bindTooltip(
+                `<div>
+                     Company Name: BEER ZERO LIMITED<br>Address: Oakfield House 115 Station Road, Wootton Bridge, United Kingdom, Ryde, PO33 4RG
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_781edaaa3fda2480c1240497fe2b6d48 = L.marker(
+                [50.826526, -0.384784],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_781edaaa3fda2480c1240497fe2b6d48.bindTooltip(
+                `<div>
+                     Company Name: BEERCRAFT BREWERY LIMITED<br>Address: Unit 6a Garcia Trading Estate, Canterbury Road, England, Worthing, BN13 1AL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_50a3ecf879eade24f99000bc464bb65d = L.marker(
+                [51.579896, -0.34843],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_50a3ecf879eade24f99000bc464bb65d.bindTooltip(
+                `<div>
+                     Company Name: BEERFISCH BREWERY LIMITED<br>Address: 4-6 Peterborough Road, , United Kingdom, Harrow, HA1 2BQ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d79d88ab303a1e6c93cd39f1cb6dfc4 = L.marker(
+                [53.106118, -1.347303],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_9d79d88ab303a1e6c93cd39f1cb6dfc4.bindTooltip(
+                `<div>
+                     Company Name: BEERMATS BREWING COMPANY LIMITED<br>Address: 77-77a High Street, , , South Normanton, DE55 2BP
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1a6c1ede15ca906f31a49dd6a19e509 = L.marker(
+                [51.514797, -0.112554],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_d1a6c1ede15ca906f31a49dd6a19e509.bindTooltip(
+                `<div>
+                     Company Name: BEERSHEBA LTD<br>Address: 22 Chancery Lane, , United Kingdom, London, WC2A 1LS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ff48a4e04089538f4bef8e9695bb1f0 = L.marker(
+                [51.657678, 0.332423],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_3ff48a4e04089538f4bef8e9695bb1f0.bindTooltip(
+                `<div>
+                     Company Name: BEERYWORKS LTD<br>Address: 35 Randalls Drive, Hutton, England, Brentwood, CM13 1NN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_322df8e5f409427b203a80ec94c84fca = L.marker(
+                [51.606982, -1.238402],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_322df8e5f409427b203a80ec94c84fca.bindTooltip(
+                `<div>
+                     Company Name: BEES & GOOSE BREWING CO LIMITED<br>Address: 19 Blackwater Way, , England, Didcot, OX11 7RL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73c6a41473c4e135178da6673ca04d1b = L.marker(
+                [52.741064, 0.558296],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_73c6a41473c4e135178da6673ca04d1b.bindTooltip(
+                `<div>
+                     Company Name: BEESTON BREWERY LTD<br>Address: Fransham Road Farm, Beeston, , Kings Lynn, PE32 2LZ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c9c9270a3670128dab1d629338a56008 = L.marker(
+                [52.934139, -1.219877],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_c9c9270a3670128dab1d629338a56008.bindTooltip(
+                `<div>
+                     Company Name: BEESTON HOP LTD<br>Address: 37 37 Enfield Street, , United Kingdom, Beeston, Nottingham, NG9 1DN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f65081c0297a1f9ebd0538553d87d603 = L.marker(
+                [52.901738, -1.283947],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_f65081c0297a1f9ebd0538553d87d603.bindTooltip(
+                `<div>
+                     Company Name: BEESTONIA BREWING COMPANY LTD<br>Address: 27 Victoria Street, Long Eaton, England, Nottingham, NG10 3EW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60a24be482fcba9ec12445414fb16bff = L.marker(
+                [51.445458, -0.040243],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_60a24be482fcba9ec12445414fb16bff.bindTooltip(
+                `<div>
+                     Company Name: BEGOT LTD<br>Address: 74 Malham Road, , England, London, SE23 1AG
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_38b7324bce94b0f354fe2c2beae1c6fb = L.marker(
+                [55.961038, -3.177902],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_38b7324bce94b0f354fe2c2beae1c6fb.bindTooltip(
+                `<div>
+                     Company Name: BELLFIELD BREWERY LIMITED<br>Address: 46 Stanley Place, , Scotland, Edinburgh, EH7 5TB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4459d6c10d58d6ab31fb2fd98494082 = L.marker(
+                [52.463862, -1.74028],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_b4459d6c10d58d6ab31fb2fd98494082.bindTooltip(
+                `<div>
+                     Company Name: BELPER BREWING CO LIMITED<br>Address: 5 Elmdon Lane, Marston Green, England, Birmingham, B37 7DL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b56e3e2a8aa9dbc14c71780122c56521 = L.marker(
+                [54.087205, -0.190785],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_b56e3e2a8aa9dbc14c71780122c56521.bindTooltip(
+                `<div>
+                     Company Name: BELSCHNICKEL BREWERY LIMITED<br>Address: 68a Scarborough Road, , England, Bridlington, YO16 7NU
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e7eca2c23516573260afb37b63cfdcd = L.marker(
+                [53.658987, -2.664632],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_6e7eca2c23516573260afb37b63cfdcd.bindTooltip(
+                `<div>
+                     Company Name: BEN'S BREWERY LTD<br>Address: Unit 17b Yarrow Mill, Yarrow Road, England, Chorley, PR6 0LP
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b568b3e03a017426466086b8c0fb099 = L.marker(
+                [52.302073, -0.688098],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_6b568b3e03a017426466086b8c0fb099.bindTooltip(
+                `<div>
+                     Company Name: BENJAMIN FRANKLIN BREWERY LTD<br>Address: 31 High Street, , England, Wellingborough, NN8 4HL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e72f0418b9af73ac27e97bc6ef9b0ec = L.marker(
+                [52.830302, 0.858802],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_3e72f0418b9af73ac27e97bc6ef9b0ec.bindTooltip(
+                `<div>
+                     Company Name: BENNETT BREWING LIMITED<br>Address: 73 North Park, , England, Fakenham, NR21 9RG
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_acc4e0ee311b0342e52ccdfc9217ff77 = L.marker(
+                [52.046845, 1.153179],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_acc4e0ee311b0342e52ccdfc9217ff77.bindTooltip(
+                `<div>
+                     Company Name: BENTLEYS RESTAURANTS LIMITED<br>Address: Isaac Lord Merchant Quarter, 7 Wherry Quay, , Ipswich, IP4 1AS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a0b657bfe99c6d0ac532bbff57bb85a = L.marker(
+                [52.670986, -1.941396],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_2a0b657bfe99c6d0ac532bbff57bb85a.bindTooltip(
+                `<div>
+                     Company Name: BEOWULF BREWING COMPANY LTD<br>Address: Unit 3-4 Chasewater Country Park, Pool Lane, Brownhills, England, Walsall, WS8 7NL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3341e52708bfa9692ca2bb7a43ad7cc6 = L.marker(
+                [50.954079, -0.140816],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_3341e52708bfa9692ca2bb7a43ad7cc6.bindTooltip(
+                `<div>
+                     Company Name: BESTENS BREWERY LIMITED<br>Address: Kbf House, The Brickworks, Unit 5, 55 Victoria Road, England, Burgess Hill, RH15 9LH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bdce40fb7692577efc9243779210608d = L.marker(
+                [51.505113, -0.094144],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_bdce40fb7692577efc9243779210608d.bindTooltip(
+                `<div>
+                     Company Name: BETTER BEVERAGE COMPANY LTD<br>Address: Days Brewing, 24 Southwark Bridge Road, England, London, SE1 9HF
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8831c3f1261975d4d7eca46cae5382a9 = L.marker(
+                [53.842902, -0.431493],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_8831c3f1261975d4d7eca46cae5382a9.bindTooltip(
+                `<div>
+                     Company Name: BEVERLEY BREWERY COMPANY LIMITED<br>Address: 71 Molescroft Road, , England, Beverley, HU17 7EG
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c43dd35e9ec362358e08a8066293bca = L.marker(
+                [52.375176, -2.317617],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_3c43dd35e9ec362358e08a8066293bca.bindTooltip(
+                `<div>
+                     Company Name: BEWDLEY BREWERY LIMITED<br>Address: Unit 7/8, Bewdley Craft Centre, Lax Lane, , Bewdley, DY12 2DZ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_078094260036ec9ecf0e02297a757b02 = L.marker(
+                [51.648649, -0.261887],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_078094260036ec9ecf0e02297a757b02.bindTooltip(
+                `<div>
+                     Company Name: BEYOND BELIEF BREWING COMPANY LIMITED<br>Address: 4 Warwick Road, , England, Borehamwood, WD6 1GT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_286b03a07e0f494a5bd95f25816dc88b = L.marker(
+                [51.493183, -0.247238],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_286b03a07e0f494a5bd95f25816dc88b.bindTooltip(
+                `<div>
+                     Company Name: BGC MANAGEMENT LTD<br>Address: Office Gold Building 3 Chiswick Park, 566 Chiswick High Road, , London, W4 5YA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ecf96689be05a4aa59bf07a804a1a13 = L.marker(
+                [52.398328, -1.480882],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_1ecf96689be05a4aa59bf07a804a1a13.bindTooltip(
+                `<div>
+                     Company Name: BIB NOODLE BAR LIMITED<br>Address: 69 John Mcguire Crescent, Binley, United Kingdom, Coventry, CV3 2QH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_74880a203d62dcc061d816df3c94cf76 = L.marker(
+                [52.110143, 1.241266],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_74880a203d62dcc061d816df3c94cf76.bindTooltip(
+                `<div>
+                     Company Name: BIFROST BREWERY LTD<br>Address: The Dog Inn The Green, Grundisburgh, England, Woodbridge, IP13 6TA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6c6d89a2633a0845d17802469bbc3db = L.marker(
+                [53.05392, -2.968818],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_d6c6d89a2633a0845d17802469bbc3db.bindTooltip(
+                `<div>
+                     Company Name: BIG HAND BREWING COMPANY LIMITED<br>Address: Unit A1 Abbey Close, Redwither Business Park, , Wrexham, LL13 9XG
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_90de4b2eac684224ffbbc3f3e5df53aa = L.marker(
+                [51.521865, -0.101295],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_90de4b2eac684224ffbbc3f3e5df53aa.bindTooltip(
+                `<div>
+                     Company Name: BIG MOUNTAIN BREWING COMPANY LIMITED<br>Address: 22 Charterhouse Square, , England, London, EC1M 6DX
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14f260a2774f9db90cffcbee2f7790c9 = L.marker(
+                [51.586768, -0.031821],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_14f260a2774f9db90cffcbee2f7790c9.bindTooltip(
+                `<div>
+                     Company Name: BIG PENNY LTD<br>Address: 1 Priestley Way, Walthamstow, United Kingdom, London, E17 6AL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_79925db81e7631d8d856c569f1481fc5 = L.marker(
+                [51.373087, -0.353709],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_79925db81e7631d8d856c569f1481fc5.bindTooltip(
+                `<div>
+                     Company Name: BIG SMOKE BREW CO LIMITED<br>Address: Unit D3 Sandown Industrial Estate, Mill Road, England, Esher, KT10 8BL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f7b2cdf53bc71499efc765b6e4a8b74 = L.marker(
+                [53.342827, -1.956186],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_5f7b2cdf53bc71499efc765b6e4a8b74.bindTooltip(
+                `<div>
+                     Company Name: BIG STONE BEER LTD<br>Address: Ashen Clough Maynestone Road, Chinley, United Kingdom, High Peak, SK23 6AH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c40d4fb98dfd128c1bd78180987f250b = L.marker(
+                [53.517128, -2.183699],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_c40d4fb98dfd128c1bd78180987f250b.bindTooltip(
+                `<div>
+                     Company Name: BINGHAMS LONDON LTD<br>Address: 290 Moston Lane, , England, Manchester, M40 9WB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db7a414e559a8cbafe709518a0cf896f = L.marker(
+                [53.844738, -1.836511],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_db7a414e559a8cbafe709518a0cf896f.bindTooltip(
+                `<div>
+                     Company Name: BINGLEY BREWERY LIMITED<br>Address: Weald House, Otley Road, , Bingley, BD16 3DA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee9377d81058d3e3c82583d55e40166d = L.marker(
+                [53.5061, -2.1582],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_ee9377d81058d3e3c82583d55e40166d.bindTooltip(
+                `<div>
+                     Company Name: BIRDBOX BREWERY LTD<br>Address: Unit 39 Phoenix Industrial Estate, Failsworth, England, Manchester, M35 9DS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee3e3aa1542839ac9b1223cc47344896 = L.marker(
+                [51.875483, 0.558999],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_ee3e3aa1542839ac9b1223cc47344896.bindTooltip(
+                `<div>
+                     Company Name: BISHOP NICK LIMITED<br>Address: 33 East Street, , , Braintree, CM7 3JJ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6b89f123cda07d92dcdc6af0f4033ac = L.marker(
+                [51.335469, -0.882852],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_a6b89f123cda07d92dcdc6af0f4033ac.bindTooltip(
+                `<div>
+                     Company Name: BL DRINKS LTD<br>Address: The Rectory Rooms Glaston Hill Road, Eversley, England, Hook, RG27 0LX
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c947423e47b52ca4e9d37307458c875b = L.marker(
+                [52.226188, 0.905476],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_c947423e47b52ca4e9d37307458c875b.bindTooltip(
+                `<div>
+                     Company Name: BLACK BIRD BREWERY LIMITED<br>Address: Pantiles Ashfield Road, Norton, , Bury St. Edmunds, IP31 3NN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_334da26c2cf6176e8a88b7f3792241d3 = L.marker(
+                [51.582785, 0.702489],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_334da26c2cf6176e8a88b7f3792241d3.bindTooltip(
+                `<div>
+                     Company Name: BLACK BOX BREWERY LTD<br>Address: Ryan House, 18-19 Aviation Way, England, Southend On Sea, SS2 6UN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_204bb2ff48ca924a6f9048709514c284 = L.marker(
+                [51.035458, 0.160515],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_204bb2ff48ca924a6f9048709514c284.bindTooltip(
+                `<div>
+                     Company Name: BLACK CAT BREWERY LIMITED<br>Address: Twitten Cottage The Twitten, Southview Road, England, Crowborough, TN6 1HF
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_16a9836d1987afc85dbcba5ced673169 = L.marker(
+                [52.26362, 0.32426],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_16a9836d1987afc85dbcba5ced673169.bindTooltip(
+                `<div>
+                     Company Name: BLACK FEN BREWERY LTD<br>Address: 29b North Street, , England, Burwell, CB25 0BA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e65725076852b4433630afa19b201cc4 = L.marker(
+                [50.3416, -5.1656],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_e65725076852b4433630afa19b201cc4.bindTooltip(
+                `<div>
+                     Company Name: BLACK FLAG BREWERY LTD<br>Address: Unit 1d Unit 1d New Road, , England, Perranporth, TR6 0DL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f11a0cf6bfe394733a71a9329379e057 = L.marker(
+                [52.938563, -1.499564],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_f11a0cf6bfe394733a71a9329379e057.bindTooltip(
+                `<div>
+                     Company Name: BLACK HOLE BREWERY LIMITED<br>Address: The Georgian House Hotel, Ashbourne Road, England, Derby, DE22 3AD
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ea20f584c86a53d1fc986cd97de531b = L.marker(
+                [55.942307, -3.238705],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_2ea20f584c86a53d1fc986cd97de531b.bindTooltip(
+                `<div>
+                     Company Name: BLACK METAL BREWERY LTD<br>Address: 10/7 Smithfield Street, , Scotland, Edinburgh, EH11 2PQ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_79acf09f1c05fd77b5e8300e243d0281 = L.marker(
+                [53.816578, -1.574674],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_79acf09f1c05fd77b5e8300e243d0281.bindTooltip(
+                `<div>
+                     Company Name: BLACK NIGHT ORANGERY LTD<br>Address: Brudenell Social Club 33 Queens Road, Hyde Park, United Kingdom, Leeds, LS6 1NY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b4ec3a8c972d2175add74bcc165f677 = L.marker(
+                [51.98139, -0.22468],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_8b4ec3a8c972d2175add74bcc165f677.bindTooltip(
+                `<div>
+                     Company Name: BLACK SQUIRREL BREWING LIMITED<br>Address: 21 Highfield, , England, Letchworth Garden City, SG6 3QD
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81d07ec61c8ba668a65880894b805467 = L.marker(
+                [53.272935, -3.250109],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_81d07ec61c8ba668a65880894b805467.bindTooltip(
+                `<div>
+                     Company Name: BLACKENED ABBEY LTD<br>Address: 3 Llys Saron, Brynford, United Kingdom, Holywell, CH8 8AS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc9d74663721efcf21d149060d3a382b = L.marker(
+                [53.485079, -2.241179],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_fc9d74663721efcf21d149060d3a382b.bindTooltip(
+                `<div>
+                     Company Name: BLACKJACK BEERS LIMITED<br>Address: The Smithfield Tavern, 37 Swan Street, England, Manchester, M4 5JZ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4162a3bd7ccef93ebf8026b16fbaffcb = L.marker(
+                [52.033564, -1.024877],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_4162a3bd7ccef93ebf8026b16fbaffcb.bindTooltip(
+                `<div>
+                     Company Name: BLACKPIT BREWERY LTD<br>Address: Blackpit Farm Silverstone Road, Stowe, United Kingdom, Buckingham, MK18 5LJ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5084e71cc86a2f983aa45452ccee32dd = L.marker(
+                [51.336678, 1.405133],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_5084e71cc86a2f983aa45452ccee32dd.bindTooltip(
+                `<div>
+                     Company Name: BLOCK BREWERY LIMITED<br>Address: 1 High Street, St. Lawrence, England, Ramsgate, CT11 0QH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ca1af130b308b6086aced2ad744443f = L.marker(
+                [51.175264, -2.023471],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_0ca1af130b308b6086aced2ad744443f.bindTooltip(
+                `<div>
+                     Company Name: BLONDE BROTHERS LIMITED<br>Address: Bathampton House, Wylye, United Kingdom, Warminster, BA12 0QD
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6b681e2483fd9078e657c17fda1521e = L.marker(
+                [54.979705, -1.568666],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_a6b681e2483fd9078e657c17fda1521e.bindTooltip(
+                `<div>
+                     Company Name: BLOWHOLE BREWERY LTD<br>Address: 74-76 74-76 Shields Road, , England, Newcastle Upon Tyne, NE6 1DL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6836b724f42425f7a20a74ba4e0b0576 = L.marker(
+                [51.491122, -0.135787],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_6836b724f42425f7a20a74ba4e0b0576.bindTooltip(
+                `<div>
+                     Company Name: BLUE GUN LIMITED<br>Address: 13 Sutherland Street, Flat 3, England, London, SW1V 4JU
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8290aaa1f67e891c451181eee9910954 = L.marker(
+                [53.751476, -1.597662],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_8290aaa1f67e891c451181eee9910954.bindTooltip(
+                `<div>
+                     Company Name: BLUE SQUARE BREWERY LIMITED<br>Address: Truth Hurts Brewery & Tap Peel Street, Morley, England, Leeds, LS27 8QL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae56167b9d34e19b2fa7757344d0799e = L.marker(
+                [53.344363, -2.704764],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_ae56167b9d34e19b2fa7757344d0799e.bindTooltip(
+                `<div>
+                     Company Name: BLUEBALL BREWERY LTD<br>Address: 31 Ashridge Street, , England, Runcorn, WA7 1HU
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53fd6c7462106d7426f58e3f5a793e4e = L.marker(
+                [51.666546, -1.090239],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_53fd6c7462106d7426f58e3f5a793e4e.bindTooltip(
+                `<div>
+                     Company Name: BMAN BREWERY LTD<br>Address: Unit 50 Monument Business Park Warpsgrove Lane, Chalgrove, England, Oxford, OX44 7RW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30aa1022cad9cab1fcd9637a9cf2ea45 = L.marker(
+                [51.9022, -0.202],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_30aa1022cad9cab1fcd9637a9cf2ea45.bindTooltip(
+                `<div>
+                     Company Name: BOG BREW BEERS LIMITED<br>Address: 11 High Street, , United Kingdom, Stevenage, SG1 3BG
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26eb50b57ebbf7e746895b3fed4dd01b = L.marker(
+                [53.259284, -2.126593],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_26eb50b57ebbf7e746895b3fed4dd01b.bindTooltip(
+                `<div>
+                     Company Name: BOLLINGTON BREWING CO. LIMITED<br>Address: Brook Mill, Parker Street, England, Macclesfield, SK11 7BQ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_44936c06335cab62745f84b612640d96 = L.marker(
+                [51.417169, -0.842551],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_44936c06335cab62745f84b612640d96.bindTooltip(
+                `<div>
+                     Company Name: BOND BREWS LTD<br>Address: 2 Mays Road, , England, Wokingham, RG40 1RW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f11468116b2f1fdfc38852ade511ff8 = L.marker(
+                [51.855383, -1.017638],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_0f11468116b2f1fdfc38852ade511ff8.bindTooltip(
+                `<div>
+                     Company Name: BOOBY TRAP BREWERY LTD<br>Address: Unit 7a/B Upper Farm Barn Bicester Road, Westcott, England, Aylesbury, HP18 0JX
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_580bb25b03d9032e8f62bd98f5f8d9f8 = L.marker(
+                [50.657835, -1.150783],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_580bb25b03d9032e8f62bd98f5f8d9f8.bindTooltip(
+                `<div>
+                     Company Name: BOOJUM AND SNARK LIMITED<br>Address: 105 High Street, , United Kingdom, Sandown, PO36 8AF
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df344eb35d656c1b65f4d8b99f594488 = L.marker(
+                [52.366251, -0.677965],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_df344eb35d656c1b65f4d8b99f594488.bindTooltip(
+                `<div>
+                     Company Name: BOOT TOWN BREWERY LTD<br>Address: 110 Finedon Road, C/O Bosworth's Garden Centre, United Kingdom, Burton Latimer, NN15 5QA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b539a3efbd54dc619eeec743aed02e86 = L.marker(
+                [53.639992, -1.32073],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_b539a3efbd54dc619eeec743aed02e86.bindTooltip(
+                `<div>
+                     Company Name: BOOTHTOWN BREWERY CO LTD<br>Address: 48/50 Wakefield Road, Ackworth, United Kingdom, Pontefract, WF7 7AB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b7162b24308a8e8657c90086b51e1ce = L.marker(
+                [51.733102, -3.141722],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_6b7162b24308a8e8657c90086b51e1ce.bindTooltip(
+                `<div>
+                     Company Name: BOOZY BODS LTD<br>Address: Unit A Llanhilleth Industrial Estate, Llanhilleth, United Kingdom, Abertillery, NP13 2RX
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c665ee9256f18108adeadb2c2e8c8b04 = L.marker(
+                [50.729868, -1.812499],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_c665ee9256f18108adeadb2c2e8c8b04.bindTooltip(
+                `<div>
+                     Company Name: BOSCOMBE BREWING COMPANY LIMITED<br>Address: 864 Christchurch Road, , England, Bournemouth, BH7 6DQ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_674343b9daae95900099aaecd7f03601 = L.marker(
+                [52.39148, -1.83294],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_674343b9daae95900099aaecd7f03601.bindTooltip(
+                `<div>
+                     Company Name: BOSTIN BREWS LTD<br>Address: 19 Parkgate Mews Shirley Solihull Shirley, Solihull, England, West Midlands, B90 3GF
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d5eff1cf7c2f37c0742bd52c34bfc80 = L.marker(
+                [53.49733, -1.34343],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_7d5eff1cf7c2f37c0742bd52c34bfc80.bindTooltip(
+                `<div>
+                     Company Name: BOTH BARRELS CRAFT BREWING CO. LTD.<br>Address: Manvers House Pioneer Close, Wath-Upon-Dearne, United Kingdom, Rotherham, S63 7JZ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3198c661f6371f9af0869bc138e5330 = L.marker(
+                [50.930953, -1.266436],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_e3198c661f6371f9af0869bc138e5330.bindTooltip(
+                `<div>
+                     Company Name: BOTLEY BREWERY LTD<br>Address: Botley Brewery Mill Hill, Botley, , Southampton, SO30 2GB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_264c53513045e4ccfd46d34b399e42b3 = L.marker(
+                [52.641518, 1.294131],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_264c53513045e4ccfd46d34b399e42b3.bindTooltip(
+                `<div>
+                     Company Name: BOUDICCA BREWING COMPANY LTD<br>Address: 51 Bakers Road, , England, Norwich, NR3 3AZ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b373702eb7d26748cd14f3de197a03c = L.marker(
+                [51.150731, 0.869978],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_7b373702eb7d26748cd14f3de197a03c.bindTooltip(
+                `<div>
+                     Company Name: BOUTILLIERS LIMITED<br>Address: 39-41 Bank Street, , England, Ashford, TN23 1DQ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_029558b575e30a2d9c19d66f5d976695 = L.marker(
+                [52.418034, -1.953847],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_029558b575e30a2d9c19d66f5d976695.bindTooltip(
+                `<div>
+                     Company Name: BOW ALLEN LIMITED<br>Address: Lifford Hall Lifford Lane, Kings Norton, United Kingdom, Birmingham, B30 3JN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c95a0393e381c2e348a22f01904f67d0 = L.marker(
+                [53.262247, -2.517619],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_c95a0393e381c2e348a22f01904f67d0.bindTooltip(
+                `<div>
+                     Company Name: BOWLERS BREWERY LIMITED<br>Address: St George's Court, Winnington Avenue, United Kingdom, Northwich, CW8 4EE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70c373f635885137debe0e154956fbda = L.marker(
+                [51.669538, -0.399431],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_70c373f635885137debe0e154956fbda.bindTooltip(
+                `<div>
+                     Company Name: BOWTIE BREWERS LIMITED<br>Address: 78 Church Road, , United Kingdom, Watford, WD17 4PU
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0475b831810df6eda480ed4c059f9ff7 = L.marker(
+                [53.442572, -1.582341],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_0475b831810df6eda480ed4c059f9ff7.bindTooltip(
+                `<div>
+                     Company Name: BRADFIELD BREWERY LIMITED<br>Address: Watt House Farm, High Bradfield, , Sheffield, S6 6LG
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff6585af5611dc63822acee19c806f24 = L.marker(
+                [53.313893, -4.653953],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_ff6585af5611dc63822acee19c806f24.bindTooltip(
+                `<div>
+                     Company Name: BRAGDY CYBI LTD<br>Address: O'R Glaw, Porthdafarch Road, United Kingdom, Holyhead, LL65 2RU
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2d4922df6ab5858b5e0a710951e670e = L.marker(
+                [51.95073, -0.27444],
+                {}
+            ).addTo(map_67ea97416bbc7548b7438468429fad24);
+        
+    
+            marker_e2d4922df6ab5858b5e0a710951e670e.bindTooltip(
+                `<div>
+                     Company Name: BRANCASTER BREWERY LIMITED<br>Address: 20 20 Hermitage Road, , United Kingdom, Hitchin, SG5 1BT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01b5b760e846396a790f60d266adceb2 = L.marker(
+                [51.450301, -2.568641]
